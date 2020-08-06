@@ -48,5 +48,9 @@ contract Wallet {
   		return balanceShares * price;
   	}
 
+  	function () external payable { // configure ens for this, ADD
+  		save(msg.value);
+  	}
+
   }
 
